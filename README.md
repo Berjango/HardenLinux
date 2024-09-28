@@ -7,3 +7,6 @@ I hope it will be useful for others.
 This script is designed to be useful for me and won't be appropriate for everyone.It can be modified to suit.
 
 Not all the commands will execute correctly and that is fine.More security measures will be added in time.
+
+
+LICENSE - not sure,need advice as I am using a modified Linux system file
