@@ -12,3 +12,8 @@ sysctl -p
 sudo apt install snort -y
 sudo apt install fail2ban -y
 sudo rm /bin/ssh*
+sudo chmod 700 /usr/bin/as
+sudo chmod 700 /usr/bin/gcc
+
+echo "Hardening almost done"
+echo "Change the root password now with passwd and make it strong"
