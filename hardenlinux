@@ -1,0 +1,12 @@
+#/bin/sh
+
+#Improve security of  a live debian based linux distribution
+
+#Author - Peter Wolf
+#dougalite@gmail.com
+#started 28/9/2024
+
+sudo ufw enable
+sudo cp sysctl.conf /etc
+sudo apt install snort -y
+sudo apt install fail2ban -y
