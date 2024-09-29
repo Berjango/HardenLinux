@@ -8,7 +8,7 @@
 
 sudo ufw enable
 sudo cp sysctl.conf /etc
-sysctl -p
+sudo sysctl -p
 sudo apt install snort -y
 sudo apt install fail2ban -y
 sudo rm /bin/ssh*
