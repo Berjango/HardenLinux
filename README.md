@@ -4,7 +4,7 @@ HAS NOT BEEN EXTENSIVELY TESTED BY ME.
 I will attempt to improve it with time.So far I have not noticed any problems with basic use including web browsing,emails and bitorrent.
 I have noticed very significant improvement in system performance,especially web browsing.
 
-Many ideas obtained from various websites,although many that are around are unreliable so be careful.Ideas also from observation,official documentationa,personal experience,reading books and basic logic.
+Many ideas obtained from various websites,although many that are around are unreliable allegedly so be careful.Ideas also from observation,official documentationa,personal experience,reading books and basic logic.
 
 A very simple shell script designed to improve the security of a debain based or similar live linux system that is intended for basic use.
 
