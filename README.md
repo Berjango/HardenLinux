@@ -8,7 +8,7 @@ Many ideas obtained from
 
 https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
 
-and various other websites.Ideas also from observation,official documentationa,personal experience and basic logic.
+and various other websites.Ideas also from observation,official documentationa,personal experience,reading books and basic logic.
 
 A very simple shell script designed to improve the security of a debain based or similar live linux system that is intended for basic use.
 
