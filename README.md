@@ -3,7 +3,9 @@ Please note,this is currently experimental as I don't fully understand all the s
 I will attempy to improve it with time.So far I have not noticed any problems with basic use including web browsing,emails and bitorrent.
 I have noticed very significant improvement in system performance,especially web browsing.
 
+Many ideas obtained from
 
+https://github.com/imthenachoman/How-To-Secure-A-Linux-Server
 
 
 A very simple shell script designed to improve the security of a debain based or similar live linux system that is intended for basic use.
