@@ -1,8 +1,6 @@
 Please note,this is currently experimental as I don't fully understand all the settings and things being done.USE AT YOUR OWN RISK.
 HAS NOT BEEN EXTENSIVELY TESTED BY ME.
 
-THIS IS AN ONGOING EXPERIMENT
-
 I will attempt to improve it with time.So far I have not noticed any problems with basic use including web browsing,emails and bitorrent.
 I have noticed very significant improvement in system performance,especially web browsing.
 
