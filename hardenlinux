@@ -6,10 +6,10 @@
 #dougalite@gmail.com
 #started 28/9/2024
 
-sudo apt update
-sudo ufw enable
 sudo cp sysctl.conf /etc
 sudo sysctl -p
+sudo ufw enable
+sudo apt update
 sudo apt install snort fail2ban -y
 sudo apt install firejail firejail-profiles -y
 sudo rm /bin/ssh*
@@ -18,4 +18,4 @@ sudo chmod 700 /usr/bin/gcc
 
 echo "Hardening almost done"
 echo "Change the root password now with passwd and make it strong"
-echo "Use firejail when running programs to restrict damage they can do. eg. firejail firefox"
+echo "Use firejail when running programs to restrict damage they can do. eg. firejail firefox or firejail thunderbird"
