@@ -6,13 +6,13 @@
 #dougalite@gmail.com
 #started 28/9/2024
 
+sudo apt update
 sudo ufw enable
 sudo cp sysctl.conf /etc
 sudo sysctl -p
-sudo apt install snort -y
-sudo apt install fail2ban -y
+sudo apt install snort fail2ban -y
+sudo apt install firejail firejail-profiles -y
 sudo rm /bin/ssh*
-sudo apt install firejail firejail-profiles
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
 
