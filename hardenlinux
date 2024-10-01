@@ -10,7 +10,7 @@ sudo cp sysctl.conf /etc
 sudo sysctl -p
 sudo ufw enable
 sudo apt update
-sudo apt install snort fail2ban -y
+sudo apt install snort fail2ban firehol -y
 sudo apt install firejail firejail-profiles -y
 sudo rm /bin/ssh*
 sudo chmod 700 /usr/bin/as
