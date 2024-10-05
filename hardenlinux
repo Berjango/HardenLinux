@@ -9,6 +9,7 @@
 sudo cp sysctl.conf /etc
 sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
+sudo cp avahi-daemon.conf /etc/avahi
 sudo systemctl daemon-reload
 sudo cp access.conf /etc/security
 sudo cp faillock.conf /etc/security
