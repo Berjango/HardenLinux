@@ -11,6 +11,8 @@ sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
 sudo systemctl daemon-reload
 sudo cp access.conf /etc/security
+sudo cp faillock.conf /etc/security
+sudo cp limits.conf /etc/security
 sudo ufw enable
 sudo apt update
 sudo apt install snort fail2ban firehol -y
