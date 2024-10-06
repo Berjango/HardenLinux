@@ -10,18 +10,20 @@ sudo cp sysctl.conf /etc
 sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
+sudo cp client.conf /etc/pulse
+sudo cp daemon.conf /etc/pulse
 sudo systemctl daemon-reload
 sudo cp access.conf /etc/security
 sudo cp faillock.conf /etc/security
 sudo cp limits.conf /etc/security
 sudo ufw enable
+sudo ufw logging medium
 sudo apt update
-sudo apt install snort fail2ban firehol -y
-sudo apt install firejail firejail-profiles -y
+sudo apt install snort fail2ban firehol firejail firejail-profiles -y
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba*
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
 
 echo "Hardening almost done"
 echo "Change the root password now with passwd and make it strong"
-echo "Use firejail when running programs to restrict damage they can do. eg. firejail firefox or firejail thunderbird"
+echo "Use firejail to limit damage from programs. eg firejail firefox or firejail thunderbird."
