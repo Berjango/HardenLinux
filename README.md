@@ -2,7 +2,7 @@ Please note,this is currently experimental as I don't fully understand all the s
 HAS NOT BEEN EXTENSIVELY TESTED BY ME.
 
 I will attempt to improve it with time.So far I have not noticed any problems with basic use including web browsing,emails and bitorrent,music streaming,videos and file browsing.
-I have noticed very significant improvement in system performance,especially web browsing.
+I have noticed very significant improvement in system performance,especially web browsing.I mainly use it with Linux Mint but it could be modified for other distributions.
 
 Many ideas obtained from various websites,although many that are around are unreliable allegedly so be careful.Ideas also from observation,official documentationa,personal experience,reading books and basic logic.
 
