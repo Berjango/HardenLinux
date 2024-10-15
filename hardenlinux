@@ -11,6 +11,7 @@ sudo cp hosts.deny /etc
 sudo cp fuse.conf /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
+sudo cp avahi-daemon /etc/default
 sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
