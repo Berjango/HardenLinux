@@ -5,22 +5,16 @@
 #Author - Peter Wolf
 #dougalite@gmail.com
 #started 28/9/2024
-
-sudo cp sysctl.conf /etc
-sudo cp hosts.deny /etc
-sudo cp fuse.conf /etc
+sudo cp sysctl.conf hosts.deny fuse.conf /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
-sudo cp avahi-daemon /etc/default
+sudo cp avahi-daemon firehol /etc/default
 sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
-sudo cp client.conf /etc/pulse
-sudo cp daemon.conf /etc/pulse
+sudo cp client.conf daemon.conf /etc/pulse
 sudo systemctl daemon-reload
-sudo cp access.conf /etc/security
-sudo cp faillock.conf /etc/security
-sudo cp limits.conf /etc/security
+sudo cp access.conf faillock.conf limits.conf /etc/security
 sudo cp Xsession.options /etc/X11
 sudo ufw enable
 sudo ufw logging medium
