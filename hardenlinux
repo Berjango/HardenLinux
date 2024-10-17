@@ -10,6 +10,8 @@ sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
 sudo cp avahi-daemon firehol /etc/default
 sudo cp udev.conf /etc/udev
+sudo cp org.freedesktop.ModemManager1.conf org.freedesktop.GeoClue2.conf avahi-dbus.conf /etc/dbus-1/system.d
+
 sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
