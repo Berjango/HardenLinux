@@ -9,6 +9,7 @@ sudo cp sysctl.conf hosts.deny fuse.conf /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
 sudo cp avahi-daemon firehol /etc/default
+sudo cp udev.conf /etc/udev
 sudo sysctl -p
 sudo cp networkd.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
@@ -21,7 +22,7 @@ sudo ufw logging medium
 sudo apt update
 sudo apt install snort fail2ban firehol firejail firejail-profiles -y
 sudo cp fail2ban.conf /etc/fail2ban
-sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift
+sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
 
