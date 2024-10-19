@@ -1,0 +1,26 @@
+#/bin/sh
+
+#Improve security of  a live garuda linux distribution
+
+#Author - Peter Wolf
+#dougalite@gmail.com
+#started 18/10/2024
+sudo cp fuse.conf /etc
+sudo cp udev.conf /etc/udev
+
+sudo cp garuda/applet.conf /etc/firewall
+sudo firewalld
+sudo cp networkd.conf /etc/systemd
+sudo cp avahi-daemon.conf /etc/avahi
+sudo cp client.conf /etc/pulse
+sudo systemctl daemon-reload
+sudo cp access.conf faillock.conf limits.conf /etc/security
+#sudo cp Xsession.options /etc/X11
+sudo cp fail2ban.conf /etc/fail2ban
+sudo pacman -Sy fail2ban
+sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
+sudo chmod 700 /usr/bin/as
+sudo chmod 700 /usr/bin/gcc
+
+echo "Hardening almost done"
+echo "Change the root password now with passwd and make it strong"
