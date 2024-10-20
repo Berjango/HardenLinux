@@ -21,6 +21,8 @@ sudo cp access.conf faillock.conf limits.conf /etc/security
 sudo cp Xsession.options /etc/X11
 sudo apt update
 sudo apt install ufw fail2ban firehol firejail firejail-profiles -y
+#sudo firewalld --log-target file
+#sudo firewalld --log-file /tmp/xprjx509823
 sudo firehol accurate
 sudo firehol start
 sh ufwsetup

@@ -11,7 +11,7 @@
 
 
 sudo ufw enable
-sudo ufw logging medium
+sudo ufw logging low
 sudo ufw deny from 172.64.146.150 
 sudo ufw deny from 35.163.172.197
 sudo ufw deny from 104.16.79.73
@@ -22,4 +22,34 @@ sudo ufw deny from 104.26.4.215
 sudo ufw deny from 104.22.75.216
 sudo ufw deny from 34.160.152.31
 sudo ufw deny from 69.173.158.92
+#sudo ufw deny from fe80:0000:0000:0000:7e01:4ab9:4bc7:cdbc
+#sudo ufw deny from ff02:0000:0000:0000:0000:0001:ffd2:61fd
+#sudo ufw deny from fe80:0000:0000:0000:0217:31ff:fed2:61fd
+#sudo ufw deny from fe80:0000:0000:0000:c4cd:b9fb:9457:0b76
+#sudo ufw deny from fe80:0000:0000:0000:0356:d6b2:f010:cd94
+#sudo ufw deny from fe80:0000:0000:0000:4bef:ec5a:8ba0:e613
+#sudo ufw deny from fe80:0000:0000:0000:9f4b:c4d6:9136:3a02
+
+sudo ufw deny from fe80::/72
+
+sudo ufw deny to 172.64.146.150 
+sudo ufw deny to 35.163.172.197
+sudo ufw deny to 104.16.79.73
+sudo ufw deny to 172.66.42.248
+sudo ufw deny to 172.67.74.207
+sudo ufw deny to 104.26.2.70
+sudo ufw deny to 104.26.4.215
+sudo ufw deny to 104.22.75.216
+sudo ufw deny to 34.160.152.31
+sudo ufw deny to 69.173.158.92
+#sudo ufw deny to fe80:0000:0000:0000:7e01:4ab9:4bc7:cdbc
+#sudo ufw deny to ff02:0000:0000:0000:0000:0001:ffd2:61fd
+#sudo ufw deny to fe80:0000:0000:0000:0217:31ff:fed2:61fd
+#sudo ufw deny to fe80:0000:0000:0000:c4cd:b9fb:9457:0b76
+#sudo ufw deny to fe80:0000:0000:0000:0356:d6b2:f010:cd94
+#sudo ufw deny to fe80:0000:0000:0000:4bef:ec5a:8ba0:e613
+#sudo ufw deny to fe80:0000:0000:0000:9f4b:c4d6:9136:3a02
+
+sudo ufw deny to fe80::/72
+
 

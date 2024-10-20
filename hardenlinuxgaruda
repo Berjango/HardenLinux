@@ -9,6 +9,7 @@ sudo cp fuse.conf /etc
 sudo cp udev.conf /etc/udev
 
 sudo cp garuda/applet.conf /etc/firewall
+sudo pacman -Sy firewalld
 sudo firewalld
 sudo cp networkd.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
@@ -16,8 +17,8 @@ sudo cp client.conf /etc/pulse
 sudo systemctl daemon-reload
 sudo cp access.conf faillock.conf limits.conf /etc/security
 #sudo cp Xsession.options /etc/X11
-sudo cp fail2ban.conf /etc/fail2ban
 sudo pacman -Sy fail2ban
+sudo cp fail2ban.conf /etc/fail2ban
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
