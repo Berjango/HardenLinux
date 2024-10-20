@@ -19,11 +19,12 @@ sudo cp client.conf daemon.conf /etc/pulse
 sudo systemctl daemon-reload
 sudo cp access.conf faillock.conf limits.conf /etc/security
 sudo cp Xsession.options /etc/X11
-sudo ufw enable
-sudo ufw logging medium
+sh ufwsetup
 sudo apt update
 sudo apt install snort fail2ban firehol firejail firejail-profiles -y
 sudo cp fail2ban.conf /etc/fail2ban
+sudo firehol accurate
+sudo firehol start
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
