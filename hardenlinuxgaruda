@@ -7,7 +7,7 @@
 #started 18/10/2024
 sudo cp fuse.conf /etc
 sudo cp udev.conf /etc/udev
-
+sh netconfig
 sudo cp garuda/applet.conf /etc/firewall
 sudo pacman -Sy firewalld
 sudo firewalld

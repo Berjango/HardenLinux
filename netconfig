@@ -1,0 +1,14 @@
+#/bin/bash
+
+
+#Author - Peter Wolf
+#21-10-2024
+#dougalite@gmail.com
+
+#Simple network configuration for the purpose of hardening a live linux system
+
+myinterface=perl ./currentinterface.pl
+
+sudo ip link set multicast off dev $myinterface
+#sudo ip link set broadcast off dev $myinterface
+

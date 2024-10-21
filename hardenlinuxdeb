@@ -5,6 +5,7 @@
 #Author - Peter Wolf
 #dougalite@gmail.com
 #started 28/9/2024
+sh netconfig
 sudo cp sysctl.conf hosts.deny fuse.conf /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
