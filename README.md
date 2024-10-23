@@ -5,8 +5,8 @@ I will attempt to improve it with time.So far I have not noticed any problems wi
 I have noticed very significant improvement in system performance,especially web browsing.I mainly use it with Linux Mint but it could be modified for other distributions.
 
 
-Please note,this is intended for use with a live system,which means one running from a DVD or write protected flash drive. This program is 100% useless for use with a HDD or SSD.Once your files are modified,
-nothing will save your system and in most cases a reinstallation is required and then it just gets hacked again and you are back at the start.
+Please note,this is intended for use with a live system,which means one running from a DVD or write protected flash drive. This program is 100% useless for use with a HDD or SSD.Once your files are modified on SSD or HDD ,
+it is extremely difficult to save your system and in most cases a reinstallation is required and then it just gets hacked again and you are back at the start.
 
 Many ideas obtained from various websites,although many that are around are unreliable allegedly so be careful.Ideas also from observation,official documentationa,personal experience,reading books and basic logic.
 
