@@ -15,6 +15,7 @@ DISTRIBUTION  :               COMMAND
 Mint           :             sh hardenlinuxmint,
 debian         :             sh hardenlinuxdeb,
 garuda         :             sh hardenlinuxgaruda,
+bodhi          :              sh hardenlinuxmint,
 ------------------------------------------------------
 Maybe there is something already that does this and is better but I couldn't find it and maybe I am not very good at this but this program has been useful for me.
 I hope it will be useful for others.
