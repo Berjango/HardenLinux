@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/sh
 
 
 #Author - Peter Wolf
@@ -7,8 +7,8 @@
 
 #Simple network configuration for the purpose of hardening a live linux system
 
-myinterface=perl ./currentinterface.pl
+sudo chmod a+x ./currentinterface.pl
 
-sudo ip link set multicast off dev $myinterface
+sudo ip link set multicast off dev $(perl ./currentinterface.pl)
 #sudo ip link set broadcast off dev $myinterface
 
