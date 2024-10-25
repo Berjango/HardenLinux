@@ -19,7 +19,7 @@ sudo cp access.conf faillock.conf limits.conf /etc/security
 #sudo cp Xsession.options /etc/X11
 sudo pacman -Sy fail2ban
 sudo cp fail2ban.conf /etc/fail2ban
-sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
+sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/rsync* /bin/snapper
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
 
