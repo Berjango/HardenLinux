@@ -27,6 +27,7 @@ sudo cp fail2ban.conf /etc/fail2ban
 sudo firehol accurate
 sudo firehol start
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
+sudo rm -r /etc/bluetooth
 sudo chmod 700 /usr/bin/as
 sudo chmod 700 /usr/bin/gcc
 
