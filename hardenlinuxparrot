@@ -7,24 +7,24 @@
 #started 28/10/2024
 
 sh netconfig
-#sudo cp sysctl.conf hosts.deny fuse.conf /etc
-#sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
-#sudo cp cups-browsed.conf /etc/cups
-#sudo cp avahi-daemon firehol useradd /etc/default
-#sudo cp udev.conf /etc/udev
-#sudo cp org.freedesktop.ModemManager1.conf org.freedesktop.GeoClue2.conf org.freedesktop.SystemToolsBackends.conf avahi-dbus.conf /etc/dbus-1/system.d
+sudo cp sysctl.conf hosts.deny fuse.conf /etc
+sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
+sudo cp cups-browsed.conf /etc/cups
+sudo cp avahi-daemon useradd /etc/default
+sudo cp udev.conf /etc/udev
+sudo cp org.freedesktop.ModemManager1.conf org.freedesktop.GeoClue2.conf org.freedesktop.SystemToolsBackends.conf avahi-dbus.conf /etc/dbus-1/system.d
 
-#sudo sysctl -p
-#sudo cp networkd.conf system.conf /etc/systemd
-#sudo cp avahi-daemon.conf /etc/avahi
-##sudo cp client.conf daemon.conf /etc/pulse
-#sudo systemctl daemon-reload
-#sudo cp access.conf faillock.conf limits.conf /etc/security
-#sudo cp Xsession.options /etc/X11
+sudo sysctl -p
+sudo cp networkd.conf system.conf /etc/systemd
+sudo cp avahi-daemon.conf /etc/avahi
+sudo cp client.conf daemon.conf /etc/pulse
+sudo systemctl daemon-reload
+sudo cp access.conf faillock.conf limits.conf /etc/security
+sudo cp Xsession.options /etc/X11
 sh ufwsetup
 sudo apt update
 sudo apt install fail2ban -y
-#sudo cp fail2ban.conf /etc/fail2ban
+sudo cp fail2ban.conf /etc/fail2ban
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
 sudo rm -r /etc/bluetooth
 sudo chmod 700 /usr/bin/as
