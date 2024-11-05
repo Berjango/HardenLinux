@@ -30,17 +30,18 @@ sudo ufw deny from 198.142.152.0/24
 #sudo ufw deny from 198.142.152.166
 #sudo ufw deny from 198.142.152.167
 #sudo ufw deny from 198.142.152.168
-sudo ufw deny from 152.195.38.76
 sudo ufw deny from 172.64.149.23/16
 sudo ufw deny from 4.237.22.34
-sudo ufw deny from 52.195.38.76
+sudo ufw deny from 52.231.0.0/16
 sudo ufw deny from 23.106.0.0/16
 sudo ufw deny from 23.206.194.91/16
 sudo ufw deny from 23.62.231.65
 sudo ufw deny from 23.58.197.143/16
 sudo ufw deny from 23.32.60.211/16
+sudo ufw deny from 23.96.0.0/16
+
 sudo ufw deny from 151.101.0.0/16
-sudo ufw deny from 216.198.0.0/16
+sudo ufw deny from 216.198.0.0/24
 sudo ufw deny from 65.8.33.59/16
 sudo ufw deny from 47.246.0.0/24
 sudo ufw deny from 211.28.130.0/8
@@ -79,6 +80,7 @@ sudo ufw deny from 74.214.0.0/16
 sudo ufw deny from 13.107.0.0/16
 sudo ufw deny from 159.89.0.0/16
 sudo ufw deny from 45.137.0.0/16
+sudo ufw deny from 141.226.0.0/16
 
 sudo ufw deny from fe80::/80
 sudo ufw deny from 2600:1901:0:38d7::/32
@@ -98,8 +100,6 @@ sudo ufw deny to 198.142.152.0/24
 #sudo ufw deny to 198.142.152.165
 #sudo ufw deny to 198.142.152.166
 #sudo ufw deny to 198.142.152.167
-#sudo ufw deny to 198.142.152.168
-sudo ufw deny to 152.195.38.76
 sudo ufw deny to 172.64.149.23/16
 sudo ufw deny to 4.237.22.34
 sudo ufw deny to 151.101.0.0/16
@@ -108,8 +108,10 @@ sudo ufw deny to 23.206.194.91/16
 sudo ufw deny to 23.62.231.65
 sudo ufw deny to 23.58.197.143/16
 sudo ufw deny to 23.32.60.211/16
-sudo ufw deny to 152.195.38.76
-sudo ufw deny to 216.198.0.0/16
+sudo ufw deny from 23.96.0.0/16
+
+sudo ufw deny to 52.231.0.0/16
+sudo ufw deny to 216.198.0.0/24
 sudo ufw deny to 65.8.33.59/16
 sudo ufw deny to 47.246.0.0/24
 sudo ufw deny to 211.28.130.0/8
@@ -148,6 +150,7 @@ sudo ufw deny to 74.214.0.0/16
 sudo ufw deny to 13.107.0.0/16
 sudo ufw deny to 159.89.0.0/16
 sudo ufw deny to 45.137.0.0/16
+sudo ufw deny to 141.226.0.0/16
 
 
 #sudo ufw deny to 157.240.8.0/8
