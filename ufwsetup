@@ -1,11 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 #ufw setup
 #Author - Peter Wolf
 #dougalite@gmail.com
 #20-10-2024
-
-
 
 #This is specific to my situation and needs to be edited if someone else is going to use it.
 
@@ -14,154 +12,17 @@ sudo ufw enable
 sudo ufw logging low
 sudo ufw deny 67
 sudo ufw deny 68
-sudo ufw deny from 172.64.146.150 
-sudo ufw deny from 35.163.172.197
-#sudo ufw deny from 104.16.79.73
-sudo ufw deny from 172.66.42.248/16
-sudo ufw deny from 172.67.74.207/16
-sudo ufw deny from 104.26.2.70/24
-#sudo ufw deny from 104.26.4.215
-#sudo ufw deny from 104.22.75.216
-sudo ufw deny from 34.160.152.31
-sudo ufw deny from 69.173.158.92/24
-sudo ufw deny from 198.142.152.0/24
-#sudo ufw deny from 198.142.152.164
-#sudo ufw deny from 198.142.152.165
-#sudo ufw deny from 198.142.152.166
-#sudo ufw deny from 198.142.152.167
-#sudo ufw deny from 198.142.152.168
-sudo ufw deny from 172.64.149.23/16
-sudo ufw deny from 4.237.22.34
-sudo ufw deny from 52.231.0.0/16
-sudo ufw deny from 23.106.0.0/16
-sudo ufw deny from 23.206.194.91/16
-sudo ufw deny from 23.62.231.65
-sudo ufw deny from 23.58.197.143/16
-sudo ufw deny from 23.32.60.211/16
-sudo ufw deny from 23.96.0.0/16
-
-sudo ufw deny from 151.101.0.0/16
-sudo ufw deny from 216.198.0.0/24
-sudo ufw deny from 65.8.33.59/16
-sudo ufw deny from 47.246.0.0/24
-sudo ufw deny from 211.28.130.0/8
-sudo ufw deny from 211.152.0.0/16
-sudo ufw deny from 138.197.231.245/8
-sudo ufw deny from 103.180.114.1/24
-sudo ufw deny from 20.37.198.0/8
-sudo ufw deny from 192.184.0.0/16
-sudo ufw deny from 192.108.0.0/16
-sudo ufw deny from 182.161.0.0/16
-#sudo ufw deny from 157.240.8.0/8
-sudo ufw deny from 149.154.0.0/16
-sudo ufw deny from 87.250.0.0/16
-sudo ufw deny from 152.195.0.0/16
-sudo ufw deny from 162.159.0.0/24
-sudo ufw deny from 207.65.0.0/16
-sudo ufw deny from 131.153.0.0/16
-sudo ufw deny from 24.144.0.0/16
-sudo ufw deny from 209.126.106.0/24
-sudo ufw deny from 117.172.106.0/16
-sudo ufw deny from 183.177.106.0/16
-sudo ufw deny from 139.84.0.0/16
-sudo ufw deny from 185.84.0.0/16
-sudo ufw deny from 185.184.0.0/16
-sudo ufw deny from 67.199.0.0/16
-sudo ufw deny from 37.157.0.0/24
-sudo ufw deny from 161.35.0.0/16
-sudo ufw deny from 43.132.0.0/16
-sudo ufw deny from 79.127.0.0/16
-sudo ufw deny from 29.51.0.0/16
-sudo ufw deny from 32.67.0.0/16
-sudo ufw deny from 116.213.0.0/16
-sudo ufw deny from 150.171.0.0/16
-sudo ufw deny from 49.44.0.0/16
-sudo ufw deny from 147.75.0.0/16
-sudo ufw deny from 74.214.0.0/16
-sudo ufw deny from 13.107.0.0/16
-sudo ufw deny from 159.89.0.0/16
-sudo ufw deny from 45.137.0.0/16
-sudo ufw deny from 141.226.0.0/16
-sudo ufw deny from 135.181.0.0/16
-
-sudo ufw deny from fe80::/80
-sudo ufw deny from 2600:1901:0:38d7::/32
-
-sudo ufw deny to 172.64.146.150/16
-sudo ufw deny to 35.163.172.197
-sudo ufw deny to 104.16.79.73/24
-sudo ufw deny to 172.66.42.248/16
-sudo ufw deny to 172.67.74.207/16
-#sudo ufw deny to 104.26.2.70
-#sudo ufw deny to 104.26.4.215
-#sudo ufw deny to 104.22.75.216
-sudo ufw deny to 34.160.152.31
-sudo ufw deny to 69.173.158.92/24
-sudo ufw deny to 198.142.152.0/24
-#sudo ufw deny to 198.142.152.164
-#sudo ufw deny to 198.142.152.165
-#sudo ufw deny to 198.142.152.166
-#sudo ufw deny to 198.142.152.167
-sudo ufw deny to 172.64.149.23/16
-sudo ufw deny to 4.237.22.34
-sudo ufw deny to 151.101.0.0/16
-sudo ufw deny to 23.106.0.0/16
-sudo ufw deny to 23.206.194.91/16
-sudo ufw deny to 23.62.231.65
-sudo ufw deny to 23.58.197.143/16
-sudo ufw deny to 23.32.60.211/16
-sudo ufw deny to 23.96.0.0/16
-
-sudo ufw deny to 52.231.0.0/16
-sudo ufw deny to 216.198.0.0/24
-sudo ufw deny to 65.8.33.59/16
-sudo ufw deny to 47.246.0.0/24
-sudo ufw deny to 211.28.130.0/8
-sudo ufw deny to 211.152.0.0/16
-sudo ufw deny to 138.197.231.245/8
-sudo ufw deny to 103.180.114.1/24
-sudo ufw deny to 20.37.198.0/8
-sudo ufw deny to 192.184.0.0/16
-sudo ufw deny to 192.108.0.0/16
-sudo ufw deny to 182.161.0.0/16
-sudo ufw deny to 149.154.0.0/16
-sudo ufw deny to 87.250.0.0/16
-sudo ufw deny to 152.195.0.0/16
-sudo ufw deny to 162.159.0.0/24
-sudo ufw deny to 207.65.0.0/16
-sudo ufw deny to 131.153.0.0/16
-sudo ufw deny to 24.144.0.0/16
-sudo ufw deny to 209.126.106.0/24
-sudo ufw deny to 117.172.106.0/16
-sudo ufw deny to 183.177.106.0/16
-sudo ufw deny to 139.84.0.0/16
-sudo ufw deny to 185.84.0.0/16
-sudo ufw deny to 185.184.0.0/16
-sudo ufw deny to 29.51.0.0/16
-
-sudo ufw deny to 67.199.0.0/16
-sudo ufw deny to 37.157.0.0/24
-sudo ufw deny to 161.35.0.0/16
-sudo ufw deny to 43.132.0.0/16
-sudo ufw deny to 79.127.0.0/16
-sudo ufw deny to 32.67.0.0/16
-sudo ufw deny to 116.213.0.0/16
-sudo ufw deny to 150.171.0.0/16
-sudo ufw deny to 49.44.0.0/16
-sudo ufw deny to 147.75.0.0/16
-sudo ufw deny to 74.214.0.0/16
-sudo ufw deny to 13.107.0.0/16
-sudo ufw deny to 159.89.0.0/16
-sudo ufw deny to 45.137.0.0/16
-sudo ufw deny to 141.226.0.0/16
-sudo ufw deny to 135.181.0.0/16
-
-
-
-#sudo ufw deny to 157.240.8.0/8
-
-sudo ufw deny to fe80::/80
-sudo ufw deny to 2600:1901:0:38d7::/32
-
 sudo ufw deny to 192.168.0.255
+
+
+ipstoblock=(86.189.0.0/16 106.10.0.0/16 172.64.146.150 35.163.172.197 172.66.42.248/16 172.67.74.207/16 104.26.2.70/24 34.160.152.31 69.173.158.92/24 198.142.152.0/24 172.64.149.23/16 4.237.22.34 52.231.0.0/16 23.106.0.0/16 23.206.194.91/16 23.62.231.65 23.58.197.143/16 23.32.60.211/16 23.96.0.0/16 151.101.0.0/16 216.198.0.0/24 65.8.33.59/16 47.246.0.0/24 211.28.130.0/8 211.152.0.0/16 138.197.231.245/8 103.180.114.1/24 20.37.198.0/8 192.184.0.0/16 192.108.0.0/16 182.161.0.0/16 149.154.0.0/16 87.250.0.0/16 152.195.0.0/16 162.159.0.0/24 207.65.0.0/16 131.153.0.0/16 24.144.0.0/16 209.126.106.0/24 117.172.106.0/16 183.177.106.0/16 139.84.0.0/16 185.84.0.0/16 185.184.0.0/16 67.199.0.0/16 37.157.0.0/24 161.35.0.0/16 43.132.0.0/16 79.127.0.0/16 29.51.0.0/16 32.67.0.0/16 116.213.0.0/16 150.171.0.0/16 49.44.0.0/16 147.75.0.0/16 74.214.0.0/16 13.107.0.0/16 159.89.0.0/16 45.137.0.0/16 141.226.0.0/16 135.181.0.0/16 101.33.0.0/16 fe80::/80 2600:1901:0:38d7::/32)
+
+for ip in ${ipstoblock[*]}
+    do
+        sudo ufw deny from $ip
+        sudo ufw deny to $ip
+        echo "Blocked $ip"
+    done
+
+
 
