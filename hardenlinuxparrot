@@ -7,7 +7,7 @@
 #started 28/10/2024
 
 sh netconfig
-sudo cp sysctl.conf hosts.deny fuse.conf /etc
+sudo cp sysctl.conf hosts.deny fuse.conf protocols /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
 sudo cp avahi-daemon useradd /etc/default
@@ -21,7 +21,7 @@ sudo cp client.conf daemon.conf /etc/pulse
 sudo systemctl daemon-reload
 sudo cp access.conf faillock.conf limits.conf /etc/security
 sudo cp Xsession.options /etc/X11
-sh ufwsetup
+bash ufwsetup
 sudo apt update
 sudo apt install fail2ban -y
 sudo cp fail2ban.conf /etc/fail2ban

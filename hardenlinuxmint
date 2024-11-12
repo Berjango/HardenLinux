@@ -6,7 +6,7 @@
 #dougalite@gmail.com
 #started 28/9/2024
 sh netconfig
-sudo cp sysctl.conf hosts.deny fuse.conf /etc
+sudo cp sysctl.conf hosts.deny fuse.conf protocols /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
 sudo cp avahi-daemon firehol useradd /etc/default
@@ -20,7 +20,7 @@ sudo cp client.conf daemon.conf /etc/pulse
 sudo systemctl daemon-reload
 sudo cp access.conf faillock.conf limits.conf /etc/security
 sudo cp Xsession.options /etc/X11
-sh ufwsetup
+bash ufwsetup
 sudo apt update
 sudo apt install snort fail2ban firehol firejail firejail-profiles -y
 sudo cp fail2ban.conf /etc/fail2ban
@@ -28,8 +28,7 @@ sudo firehol accurate
 sudo firehol start
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
 sudo rm -r /etc/bluetooth
-sudo chmod 700 /usr/bin/as
-sudo chmod 700 /usr/bin/gcc
+sudo chmod 700 /usr/bin/as /usr/bin/gcc
 
 echo "Hardening almost done"
 echo "Change the root password now with passwd and make it strong"

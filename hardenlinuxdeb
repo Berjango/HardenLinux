@@ -6,7 +6,7 @@
 #dougalite@gmail.com
 #started 28/9/2024
 sh netconfig
-sudo cp sysctl.conf hosts.deny fuse.conf /etc
+sudo cp sysctl.conf hosts.deny fuse.conf protocols /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
 sudo cp avahi-daemon firehol useradd /etc/default
@@ -26,7 +26,7 @@ sudo apt install ufw fail2ban firehol firejail firejail-profiles -y
 #sudo firewalld --log-file /tmp/xprjx509823
 sudo firehol accurate
 sudo firehol start
-sh ufwsetup
+bash ufwsetup
 sudo cp fail2ban.conf /etc/fail2ban
 sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
 sudo chmod 700 /usr/bin/as
