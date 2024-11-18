@@ -6,7 +6,7 @@
 #dougalite@gmail.com
 #started 28/10/2024
 
-sh netconfig
+sh common
 sudo cp sysctl.conf hosts.deny fuse.conf protocols /etc
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups

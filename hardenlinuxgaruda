@@ -5,9 +5,9 @@
 #Author - Peter Wolf
 #dougalite@gmail.com
 #started 18/10/2024
-sudo cp fuse.conf /etc
+sudo cp fuse.conf protocols /etc
 sudo cp udev.conf /etc/udev
-sh netconfig
+sh common
 sudo cp garuda/applet.conf /etc/firewall
 sudo pacman -Sy firewalld
 sudo firewalld
