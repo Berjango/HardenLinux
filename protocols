@@ -34,12 +34,12 @@ idrp	45	IDRP		# Inter-Domain Routing Protocol
 gre	47	GRE		# General Routing Encapsulation
 esp	50	IPSEC-ESP	# Encap Security Payload [RFC2406]
 ah	51	IPSEC-AH	# Authentication Header [RFC2402]
-skip	57	SKIP		# SKIP
+#skip	57	SKIP		# SKIP
 ipv6-icmp 58	IPv6-ICMP	# ICMP for IPv6
 ipv6-nonxt 59	IPv6-NoNxt	# No Next Header for IPv6
 ipv6-opts 60	IPv6-Opts	# Destination Options for IPv6
 rspf	73	RSPF CPHB	# Radio Shortest Path First (officially CPHB)
-vmtp	81	VMTP		# Versatile Message Transport
+#vmtp	81	VMTP		# Versatile Message Transport
 eigrp	88	EIGRP		# Enhanced Interior Routing Protocol (Cisco)
 ospf	89	OSPFIGP		# Open Shortest Path First IGP
 ax.25	93	AX.25		# AX.25 frames

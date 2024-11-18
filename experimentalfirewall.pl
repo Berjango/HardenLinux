@@ -75,12 +75,13 @@ if (@badconnections){
         }
     }
 	if($unblocked){
-        blockips(@badTO);
-        blockips(@badFROM);
-        if ($last_blocked!=pop(@badTO)){
+        blockipsto(@badTO);
+        blockipsfrom(@badFROM);
+        $just_blocked=pop(@badTO);
+        if ($last_blocked!=$_){
             $total_blocked+=$unblocked;
             print "Total blocked ips = $total_blocked\n";
-            $last_blocked=$_;
+            $last_blocked=$just_blocked;
         }
 
 

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-#Soubroutine required by some programs to determine if a connection is blocked or not
+#Common subroutines to my security programs
 #Author - Peter Wolf
 #Date - 12-11-2024
 #dougalite@gmail.com
@@ -28,16 +28,28 @@ foreach(@_){
     }
     return(0);
 }
-sub blockips
+sub blockipsto
 {
 		foreach(@_){
 			`sudo ufw deny to $_`;
             print"Blocked to $_ ";
-		print fh "$_\n";
+		print fh "blocked to $_\n";
 		}
 
 
 }
+
+sub blockipsfrom
+{
+		foreach(@_){
+			`sudo ufw deny from $_`;
+            print"Blocked from $_ ";
+		print fh "blocked from $_\n";
+		}
+
+
+}
+
 
 sub containsipv4
 {
