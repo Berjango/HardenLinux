@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#installs a package in different linux distributions
+
+installpack()
+{
+if [[ "$(apt)" == *"apt is a commandline"* ]]; 
+then
+  	echo "using apt"
+	sudo apt install $1 -y
+else
+	echo "using pacman"
+	sudo pacman -Sy $1
+fi
+}

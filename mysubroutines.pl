@@ -8,6 +8,16 @@
 
 open (fh, ">", "efw.log"); 
 
+sub inarray
+{
+$searchvalue=shift;
+foreach(@_){
+	if($_==$searchvalue){
+		return(1);
+	}
+}
+return(0);
+}
 sub isblocked
 {
 shift;

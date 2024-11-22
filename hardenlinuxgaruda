@@ -7,7 +7,8 @@
 #started 18/10/2024
 sudo cp fuse.conf protocols /etc
 sudo cp udev.conf /etc/udev
-sh common
+bash common
+bash ufwsetup
 sudo cp garuda/applet.conf /etc/firewall
 sudo pacman -Sy firewalld
 sudo firewalld
@@ -25,3 +26,5 @@ sudo chmod 700 /usr/bin/gcc
 
 echo "Hardening almost done"
 echo "Change the root password now with passwd and make it strong"
+perl experimentalfirewall.pl
+

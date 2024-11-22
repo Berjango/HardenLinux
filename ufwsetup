@@ -14,17 +14,8 @@ sudo ufw deny 67
 sudo ufw deny 68
 sudo ufw deny to 192.168.0.255
 
-ipstoblock=() 
-while read line; do
-    ipstoblock+=("$line")
-done < ipstoblock
-
-for ip in ${ipstoblock[*]}
-    do
+while read ip; do
         sudo ufw deny from $ip
         sudo ufw deny to $ip
-        echo "Blocked $ip"
-    done
-
-
-
+        echo "Blocked $ip"    
+done < ipstoblock

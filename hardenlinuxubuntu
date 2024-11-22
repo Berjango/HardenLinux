@@ -1,13 +1,12 @@
 #/bin/sh
 
-#Improve security of a live linux mint distribution
+#Improve security of a live linux ubuntu distribution
 
 #Author - Peter Wolf
 #dougalite@gmail.com
-#started 28/9/2024
+#started 15/11/2024
 bash common
 sudo cp sysctl.conf hosts.deny fuse.conf protocols /etc
-sudo cp xorg.conf /etc/xpra
 sudo cp sysctlufw.conf /etc/ufw/sysctl.conf
 sudo cp cups-browsed.conf /etc/cups
 sudo cp avahi-daemon firehol useradd /etc/default
@@ -21,18 +20,20 @@ sudo cp client.conf daemon.conf /etc/pulse
 sudo systemctl daemon-reload
 sudo cp access.conf faillock.conf limits.conf /etc/security
 sudo cp Xsession.options /etc/X11
-bash ufwsetup
 sudo apt update
-sudo apt install snort fail2ban firehol firejail firejail-profiles -y
-sudo cp fail2ban.conf /etc/fail2ban
+sudo apt install ufw fail2ban firehol -y
+#sudo firewalld --log-target file
+#sudo firewalld --log-file /tmp/xprjx509823
 sudo firehol accurate
 sudo firehol start
-sudo rm /bin/ssh* /bin/bluetooth* /bin/samba* /bin/timeshift* /bin/rsync*
-sudo rm -r /etc/bluetooth
-sudo chmod 700 /usr/bin/as /usr/bin/gcc
+bash ufwsetup
+sudo cp fail2ban.conf /etc/fail2ban
+sudo rm /bin/ssh* /bin/bluetooth* /bin/rsync*
+sudo chmod 700 /usr/bin/as
+sudo chmod 700 /usr/bin/gcc
 
 echo "Hardening almost done"
 echo "Change the root password now with passwd and make it strong"
-echo "Use firejail to limit damage from programs. eg firejail firefox or firejail thunderbird."
 perl experimentalfirewall.pl
+
 
