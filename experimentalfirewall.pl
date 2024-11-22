@@ -73,8 +73,10 @@ foreach (@blockedips){
 
 @connections=split(" ",$info);
 foreach (@connections){
-	if ($_=~/(\d+\.\d+\.\d+\.\d+\:)/){
-		push(@badconnections,$_);
+	if ($_=~/(\d+\.\d+\.\d+\.\d+)\:/){
+	    if(!($_=~/.*192\.168\..*/)){
+    		push(@badconnections,$1);
+    		}
 		}
 	}
 @badTO=();
@@ -82,14 +84,14 @@ foreach (@connections){
 $unblocked=0;
 if (@badconnections){
     foreach (@badconnections){
-        $bad=$_;
-	($badip,$port)=split(":");
-        if(!isblocked($bad,@blockedTO)){
+#        $bad=$_;
+#	($badip,$port)=split(":");
+        if(!isblocked($_,@blockedTO)){
 		    $unblocked+=1;
-		    push(@badTO,$badip);
+		    push(@badTO,$_);
         }
-        if(!isblocked($bad,@blockedFROM)){
- 		    push(@badFROM,$badip);
+        if(!isblocked($_,@blockedFROM)){
+ 		    push(@badFROM,$_);
 		    $unblocked+=1;
         }
     }
