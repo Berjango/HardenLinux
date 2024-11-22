@@ -1,6 +1,10 @@
 Please note,this is currently experimental as I don't fully understand all the settings and things being done.USE AT YOUR OWN RISK.
 HAS NOT BEEN EXTENSIVELY TESTED BY ME.
 
+
+Due to ongoing development ,at times the latest code may be broken but the intention is always to correct the mistakes so try again later. It is
+normal for not all of the code to execute correctly.
+
 I will attempt to improve it with time.So far I have not noticed any problems with basic use including web browsing,emails and bitorrent,music streaming,videos and file browsing.
 I have noticed very significant improvement in system performance,especially web browsing.I mainly use it with Linux Mint but it could be modified for other distributions.
 
@@ -19,7 +23,9 @@ DISTRIBUTION  :               COMMAND
 Mint           :             sh hardenlinuxmint,
 debian         :             sh hardenlinuxdeb,
 garuda         :             sh hardenlinuxgaruda,
-bodhi          :              sh hardenlinuxmint,
+bodhi          :              sh hardenlinuxbodhi,
+parrot          :            sh hardenlinuxparrot,
+ubuntu          :            sh hardenlinuxubuntu,
 ------------------------------------------------------
 Maybe there is something already that does this and is better but I couldn't find it and maybe I am not very good at this but this program has been useful for me.
 I hope it will be useful for others.
