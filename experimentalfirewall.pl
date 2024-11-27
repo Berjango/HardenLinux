@@ -49,10 +49,11 @@ else{
 }
 print "Experimental firewall is running! logfile = efw.log in the same directory as the program.\n";
 $total_blocked=0;
-$last_blocked="";
 while(1){
 $info=`ss -rt`;
-
+if(length($info)<30){
+$info=`netstat -t`;
+}
 my @blockedTO=();
 my @blockedFROM=();
 
@@ -101,7 +102,7 @@ if (@badconnections){
 		@newlyblocked=sortblocked(\@badTO,\@newlyblocked);
 		@newlyblocked=sortblocked(\@badFROM,\@newlyblocked);
 		$totalblockedips=$#newlyblocked+1;
-        print "Total ips blocked this session = $totalblockedips\n";
+        print "Total unique ips blocked this session = $totalblockedips\n";
 
 
 	}

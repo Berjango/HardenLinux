@@ -5,6 +5,7 @@
 #Author - Peter Wolf
 #dougalite@gmail.com
 #started 18/10/2024
+sudo pacman -Rsn snapper-support
 sudo cp fuse.conf protocols /etc
 sudo cp udev.conf /etc/udev
 bash common
@@ -12,7 +13,7 @@ bash ufwsetup
 sudo cp garuda/applet.conf /etc/firewall
 sudo pacman -Sy firewalld
 sudo firewalld
-sudo cp networkd.conf /etc/systemd
+sudo cp networkd.conf journald.comf system.conf /etc/systemd
 sudo cp avahi-daemon.conf /etc/avahi
 sudo cp client.conf /etc/pulse
 sudo systemctl daemon-reload
