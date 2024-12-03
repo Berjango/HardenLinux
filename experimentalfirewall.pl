@@ -60,15 +60,21 @@ my @blockedFROM=();
 foreach (@blockedips){
 	($TO,$FROM)=split("DENY IN");
     
-	$TO =~ s/^\s*(.*?)\s*$/$1/;
-	$FROM =~ s/^\s*(.*?)\s*$/$1/;
-	if(containsipv4($TO)){
+	$TO =~ s/^\s*(.*?)\s*$/$1/; #removes spaces
+	$FROM =~ s/^\s*(.*?)\s*$/$1/; #removes spaces
+	if($TO=~/\d+\.\d+\.\d+\.\d+/){ #if contains ipv4
 		push(@blockedTO,$TO);
 	}
-	if(containsipv4($FROM)){
+	if($FROM=~/\d+\.\d+\.\d+\.\d+/){#if contains  ipv4
 		push(@blockedFROM,$FROM);
 	}
 }
+
+
+
+
+
+
 
 @badconnections=();
 
@@ -96,6 +102,11 @@ if (@badconnections){
 		    $unblocked+=1;
         }
     }
+
+
+
+#print "blocked to = @blockedTO\n";
+#print "blocked from = @blockedFROM\n";
 	if($unblocked){
         blockipsto(@badTO);
         blockipsfrom(@badFROM);

@@ -1,8 +1,11 @@
-#!/bin/sh
+#!/bin/bash
 
 #This script contains hardening common to all distributions of linux
 
-sudo apt install libc6-dev -y
+source installpackage
+
+installpack gcc
+installpack libc6-dev
 gcc -Wall slowcd.c -o slowcd
 ./slowcd
 sh netconfig

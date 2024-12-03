@@ -4,7 +4,7 @@
 
 installpack()
 {
-if [[ "$(apt)" == *"apt is a commandline"* ]]; 
+if [[ "$(apt)" == *"Usage:"* ]]; 
 then
   	echo "using apt"
 	sudo apt install $1 -y

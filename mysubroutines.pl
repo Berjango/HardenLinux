@@ -6,8 +6,6 @@
 #dougalite@gmail.com
 
 
-open (fh, ">", "efw.log"); 
-
 sub inarray
 {
 $searchvalue=shift;
@@ -21,11 +19,13 @@ return(0);
 sub isblocked
 {
 shift;
-($ip,$port)=split(":");
-@ipparts=split(".".$ip);
+($ip,$port)=split(":",$_);
+@ipparts=split(".",$ip);
 foreach(@_){
+    #print "blocked to = $_\n";
     ($bip,$bits)=split("/");
-    @bipparts=split(".".$bip);
+    @bipparts=split(".",$bip);
+    #print "bipparts= @bipparts\n";
     $blocked=1;
     for(my $i = 0; $i <= 3-$bits/8; $i++){
         if($ipparts[i]!=$bipparts[i]){
@@ -60,11 +60,4 @@ sub blockipsfrom
 
 }
 
-
-sub containsipv4
-{
-
-	return($_=~/\d+\.\d+\.\d+\.\d+/);
-}
-close(fh);
 1;
