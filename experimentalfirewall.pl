@@ -73,7 +73,7 @@ foreach (@blockedips){
 
 
 
-
+#print "Blocked to = @blockedTO\n";
 
 
 @badconnections=();

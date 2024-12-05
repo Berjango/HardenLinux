@@ -20,11 +20,12 @@ sub isblocked
 {
 shift;
 ($ip,$port)=split(":",$_);
-@ipparts=split(".",$ip);
+@ipparts=split(/\./,$ip);
 foreach(@_){
     #print "blocked to = $_\n";
     ($bip,$bits)=split("/");
-    @bipparts=split(".",$bip);
+	#print "bip = $bip\n";
+    @bipparts=split(/\./,$bip);
     #print "bipparts= @bipparts\n";
     $blocked=1;
     for(my $i = 0; $i <= 3-$bits/8; $i++){
