@@ -18,7 +18,9 @@ use FindBin;
 use lib $FindBin::Bin;
 require "mysubroutines.pl";
 
-
+$logfile="efw".`date`.".log";
+open(FH, '>', $logfile);
+print FH "Unblocked potential bad connections ip list\n";
 @newlyblocked=();
 sub sortblocked   #populate second passed array with unique ips with source from the first passed array
 {
@@ -27,6 +29,7 @@ sub sortblocked   #populate second passed array with unique ips with source from
 foreach(@$ref1){
 	if ( !inarray($_,@newlyblocked ) ){
 		push(@newlyblocked,$_);
+		print FH "$_\n";
 	}
 }
 return(@newlyblocked);
@@ -47,7 +50,7 @@ else{
 	print"ufw is installed\n";
 	`sudo ufw enable`;
 }
-print "Experimental firewall is running! logfile = efw.log in the same directory as the program.\n";
+print "Experimental firewall is running! logfile = efw(datestamp).log in the same directory as the program.\n";
 $total_blocked=0;
 while(1){
 $info=`ss -rt`;
@@ -121,6 +124,6 @@ if (@badconnections){
 }
 sleep(2);
 }
-
+close(FH);
 
 
