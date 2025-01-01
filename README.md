@@ -1,6 +1,11 @@
+--------------------------------------------January 2025----------------------------------------------------------------------------------------------
+
 Unfortunately I have had to almost stop updating this software to make life easier for myself and family. Giving hackers the source code to my security software makes things too difficult for me.
 Hopefully the software can serve as a basis for someone else on their cyber security journey.
 
+Also unfortunately,hackers got into my system and modified many of my security files which I ended up uploading here.They are probably security holes
+rather than hardening files. I will attempt to fix this problem in time but will not be updating after that.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
