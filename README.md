@@ -1,3 +1,9 @@
+Unfortunately I have had to almost stop updating this software to make life easier for myself and family. Giving hackers the source code to my security software makes things too difficult for me.
+Hopefully the software can serve as a basis for someone else on their cyber security journey.
+
+
+
+
 Please note,this is currently experimental as I don't fully understand all the settings and things being done.USE AT YOUR OWN RISK.
 HAS NOT BEEN EXTENSIVELY TESTED BY ME.
 
